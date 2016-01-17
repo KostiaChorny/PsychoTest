@@ -24,5 +24,10 @@ namespace PsychoTest
         {
             InitializeComponent();
         }
+
+        private void StrupTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            new Tests.Strup.StrupIntro().ShowDialog();
+        }
     }
 }
