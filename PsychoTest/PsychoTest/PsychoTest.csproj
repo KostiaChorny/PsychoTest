@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -105,8 +105,40 @@
     <Compile Include="Migrations\201601171438470_AddReverceId.Designer.cs">
       <DependentUpon>201601171438470_AddReverceId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601171528462_AddForeignKey.cs" />
+    <Compile Include="Migrations\201601171528462_AddForeignKey.Designer.cs">
+      <DependentUpon>201601171528462_AddForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601192306585_AddNumberSortTest.cs" />
+    <Compile Include="Migrations\201601192306585_AddNumberSortTest.Designer.cs">
+      <DependentUpon>201601192306585_AddNumberSortTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601201617252_AddedNewTest.cs" />
+    <Compile Include="Migrations\201601201617252_AddedNewTest.Designer.cs">
+      <DependentUpon>201601201617252_AddedNewTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DB.cs" />
+    <Compile Include="Tests\ConfusedLines\ConfusedLinesMain.xaml.cs">
+      <DependentUpon>ConfusedLinesMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\ConfusedLines\ConfusedLinesTestResult.cs" />
+    <Compile Include="Tests\ConfusedLines\Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\ConfusedLines\Statistics.xaml.cs">
+      <DependentUpon>Statistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\NumberSort\Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\NumberSort\NumberSortMain.xaml.cs">
+      <DependentUpon>NumberSortMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\NumberSort\NumberSortResult.cs" />
+    <Compile Include="Tests\NumberSort\Statistics.xaml.cs">
+      <DependentUpon>Statistics.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Strup\Statistics.xaml.cs">
       <DependentUpon>Statistics.xaml</DependentUpon>
     </Compile>
@@ -129,6 +161,30 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Tests\ConfusedLines\ConfusedLinesMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\ConfusedLines\Intro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\ConfusedLines\Statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\NumberSort\Intro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\NumberSort\NumberSortMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\NumberSort\Statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Tests\Strup\Statistics.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -162,6 +218,15 @@
     <EmbeddedResource Include="Migrations\201601171438470_AddReverceId.resx">
       <DependentUpon>201601171438470_AddReverceId.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601171528462_AddForeignKey.resx">
+      <DependentUpon>201601171528462_AddForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601192306585_AddNumberSortTest.resx">
+      <DependentUpon>201601192306585_AddNumberSortTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601201617252_AddedNewTest.resx">
+      <DependentUpon>201601201617252_AddedNewTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -189,7 +254,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Tests\ConfusedLines\lines.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

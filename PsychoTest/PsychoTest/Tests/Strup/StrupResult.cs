@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,6 @@ namespace PsychoTest.Tests.Strup
         public double Time { get; set; }
         public int QuestionsCount { get; set; }
         public int ErrorsCount { get; set; }
-        public int StrupResult_ResultId { get; set; }
+        public virtual StrupResult TestResult  { get; set; }
     }
 }

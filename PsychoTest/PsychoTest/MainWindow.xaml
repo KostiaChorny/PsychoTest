@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="PsychoTest" Height="240.524" Width="359.977">
     <Grid>
-        <Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="145" Height="86">
+        <Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="145" Height="139">
             <Button x:Name="StrupTestButton" Content="Тест Струпа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="127" Height="37" Click="StrupTestButton_Click"/>
+            <Button x:Name="NumberSortTestButton" Content="Розстановка чисел" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="127" Height="37" Click="NumberSortTestButton_Click"/>
+            <Button x:Name="ConfusedLinesTestButton" Content="Переплутані лінії" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="127" Height="37" Click="ConfusedLinesTestButton_Click" />
+
         </Grid>
 
 

@@ -29,5 +29,15 @@ namespace PsychoTest
         {
             new Tests.Strup.StrupIntro().ShowDialog();
         }
+
+        private void NumberSortTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            new Tests.NumberSort.Intro().ShowDialog();
+        }
+
+        private void ConfusedLinesTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            new Tests.ConfusedLines.Intro().ShowDialog();
+        }
     }
 }

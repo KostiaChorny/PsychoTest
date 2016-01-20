@@ -3,6 +3,8 @@ namespace PsychoTest.Model
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using Tests.ConfusedLines;
+    using Tests.NumberSort;
     using Tests.Strup;
     public class DB : DbContext
     {
@@ -24,6 +26,8 @@ namespace PsychoTest.Model
 
         public virtual DbSet<StrupResult> StrupTestResults { get; set; }
         public virtual DbSet<PartResult> StrupPartResults { get; set; }
+        public virtual DbSet<NumberSortResult> NumberSortTestResults { get; set; }
+        public virtual DbSet<ConfusedLinesTestResult> ConfusedLinesTestResults { get; set; }
     }
 
     //public class MyEntity

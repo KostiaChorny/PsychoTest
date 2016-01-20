@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace PsychoTest.Tests.Strup
+namespace PsychoTest.Tests.ConfusedLines
 {
     /// <summary>
     /// Interaction logic for Statistics.xaml
@@ -25,17 +25,14 @@ namespace PsychoTest.Tests.Strup
 
             using (var context = new Model.DB())
             {
-                var querry = from r in context.StrupTestResults
-                             join p in context.StrupPartResults
-                             on r.ResultId equals p.TestResult.ResultId
+                var querry = from r in context.ConfusedLinesTestResults
                              select new
                              {
                                  Name = r.Name,
                                  Date = r.Date,
-                                 Part = p.Part,
-                                 QuestionCount = p.QuestionsCount,
-                                 ErrorsCount = p.ErrorsCount,
-                                 Time = p.Time
+                                 ErrorsCount = r.ErrorsCount,
+                                 Time = r.Time,
+                                 Result = r.Result
                              };
                 dataGrid.ItemsSource = querry.ToList();
                 dataGrid.ColumnWidth = DataGridLength.Auto;
@@ -48,10 +45,9 @@ namespace PsychoTest.Tests.Strup
         {
             dataGrid.Columns[0].Header = "Ім'я";
             dataGrid.Columns[1].Header = "Дата і час";
-            dataGrid.Columns[2].Header = "Номер тесту";
-            dataGrid.Columns[3].Header = "Кількість запитань";
-            dataGrid.Columns[4].Header = "Кількість помилок";
-            dataGrid.Columns[5].Header = "Витрачений час";
+            dataGrid.Columns[2].Header = "Кількість помилок";
+            dataGrid.Columns[3].Header = "Витрачений час";
+            dataGrid.Columns[4].Header = "Результат";
         }
     }
 }
