@@ -98,10 +98,11 @@ namespace PsychoTest.Tests.NumberSort
 
                 CheckResult();
                 timer.Stop();
+                timerLabel.Content = "";
 
                 ResultPanel.Visibility = Visibility.Visible;
                 var timeElapsed = (DateTime.Now - startTime).TotalSeconds;
-                timeResultLabel.Content = timeElapsed;
+                timeResultLabel.Content = timeElapsed.ToString("F3");
                 errorResultLabel.Content = errors;
 
                 using (var db = new Model.DB())
@@ -121,7 +122,11 @@ namespace PsychoTest.Tests.NumberSort
                 answeredButtons = new List<Button>();
                 answer = "";
                 errors = 0;
-                startButton.Content = "Старт";
+                startButton.Content = "Завершити тест";
+            }
+            else if (startButton.Content.ToString() == "Завершити тест")
+            {
+                Close();
             }
         }
 
@@ -173,7 +178,7 @@ namespace PsychoTest.Tests.NumberSort
                 listLabel.Content = answer;
             }
 
-            if (answersList.Count == numbers.Count)
+            if (answersList.Count == numbers.Count || Convert.ToInt32(button.Content.ToString()) == numbers.Max())
             {
                 // TODO:
                 startButton_Click(null, null);

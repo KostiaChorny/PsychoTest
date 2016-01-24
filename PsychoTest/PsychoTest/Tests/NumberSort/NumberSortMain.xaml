@@ -52,7 +52,7 @@
         <Label x:Name="listLabel" Content="" Margin="35,0,31.2,71.6" Height="26" VerticalAlignment="Bottom"/>
         <Button x:Name="startButton" Content="Старт" HorizontalAlignment="Left" Margin="35,0,0,25.6" Width="110" Height="36" VerticalAlignment="Bottom" Click="startButton_Click"/>
         <Label x:Name="timerLabel" Content="00:00" Margin="0,0,31.2,28.6" FontSize="18.667" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="54"/>
-        <Grid Name="ResultPanel" Margin="35,23,54,98" Background="White" Visibility="Hidden">
+        <Grid Name="ResultPanel" Margin="35,23,54.2,71.6" Background="White" Visibility="Hidden">
             <Label x:Name="label1" Content="Тест завершено!" HorizontalAlignment="Left" Margin="54,44,0,0" VerticalAlignment="Top" FontSize="21.333"/>
             <Label x:Name="label1_Copy" Content="Кількість помилок: " HorizontalAlignment="Left" Margin="54,87,0,0" VerticalAlignment="Top" FontSize="21.333"/>
             <Label x:Name="label1_Copy1" Content="Час: " HorizontalAlignment="Left" Margin="196,130,0,0" VerticalAlignment="Top" FontSize="21.333"/>

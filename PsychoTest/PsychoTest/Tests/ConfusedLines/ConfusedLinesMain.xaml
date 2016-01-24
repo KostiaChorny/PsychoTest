@@ -40,14 +40,14 @@
         <Button x:Name="startButton" Content="Старт" HorizontalAlignment="Left" Margin="60,512,0,43" Width="118" Click="button_Click"/>
         <Label x:Name="label" Content="Заповніть поля зправа номерами ліній, з'єднавши їх зліва на право." HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="timerBox" Content="00:00" Margin="0,0,68,50" FontSize="16" RenderTransformOrigin="0.917,0.581" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-        <Grid x:Name="resultPanel" Visibility="Hidden" HorizontalAlignment="Left" Height="447" Margin="149,41,0,0" VerticalAlignment="Top" Width="424" Background="White">
-            <Label x:Name="label1" Content="Тест завершено!" FontSize="18" HorizontalAlignment="Left" Margin="64,36,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy" Content="Кількість помилок: " FontSize="18" HorizontalAlignment="Left" Margin="64,70,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy1" Content="Час: " FontSize="18" HorizontalAlignment="Left" Margin="184,104,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy2" Content="Результат: " FontSize="18" HorizontalAlignment="Left" Margin="134,138,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="errorCountResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="237,70,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="timeResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="237,104,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="resultResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="237,138,0,0" VerticalAlignment="Top"/>
+        <Grid x:Name="resultPanel" Visibility="Hidden" HorizontalAlignment="Left" Height="478" Margin="37,10,0,0" VerticalAlignment="Top" Width="622" Background="White">
+            <Label x:Name="label1" Content="Тест завершено!" FontSize="18" HorizontalAlignment="Left" Margin="156,109,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy" Content="Кількість помилок: " FontSize="18" HorizontalAlignment="Left" Margin="156,143,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy1" Content="Час: " FontSize="18" HorizontalAlignment="Left" Margin="276,177,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1_Copy2" Content="Результат: " FontSize="18" HorizontalAlignment="Left" Margin="226,211,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="errorCountResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="329,143,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="timeResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="329,177,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="resultResultLabel" Content="" FontSize="18" HorizontalAlignment="Left" Margin="329,211,0,0" VerticalAlignment="Top"/>
         </Grid>
 
     </Grid>

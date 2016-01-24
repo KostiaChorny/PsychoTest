@@ -81,14 +81,15 @@ namespace PsychoTest.Tests.ConfusedLines
             }
             else if (startButton.Content.ToString() == "Стоп")
             {
-                startButton.Content = "Старт";
+                startButton.Content = "Завершити тест";
+                timerBox.Content = "";
                 timer.Stop();
                 var answersCount = CheckAnswers(answers);
                 var finishTime = (DateTime.Now - startTime).TotalSeconds;
                 resultPanel.Visibility = Visibility.Visible;
 
                 errorCountResultLabel.Content = 25 - answersCount;
-                timeResultLabel.Content = finishTime;
+                timeResultLabel.Content = finishTime.ToString("F3");
                 if (answersCount >= 19)
                 {
                     resultResultLabel.Content = "Чудово";
@@ -125,6 +126,10 @@ namespace PsychoTest.Tests.ConfusedLines
                     item.Key.Text = "";
                     item.Key.IsEnabled = false;
                 }
+            }
+            else if (startButton.Content.ToString() == "Завершити тест")
+            {
+                Close();
             }
         }
 

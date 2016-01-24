@@ -143,7 +143,7 @@ namespace PsychoTest.Tests.Strup
                 Buttons.IsEnabled = false;
                 wordsResultCountLabel.Content = wordsCount;
                 errorsResultCountLabel.Content = errorCount;
-                timeResultLabel.Content = (finishTime - startTime).TotalSeconds;
+                timeResultLabel.Content = (finishTime - startTime).TotalSeconds.ToString("F3");
                 resultGrid.Visibility = Visibility.Visible;
                 timer.Stop();
                 timerLabel.Content = "";
