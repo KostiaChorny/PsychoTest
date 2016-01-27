@@ -76,20 +76,36 @@ namespace PsychoTest.Tests.Strup
         {
             words = new List<string>()
             {
-                "Слово1",
-                "Слово2",
-                "Слово3",
-                "Слово4",
-                "Слово5",
-                "Слово6",
-                "Слово7",
-                "Слово8",
-                "Слово9",
-                "Слово10",
-                "Слово11",
-                "Слово12",
-                "Слово13",
-                "Слово14"
+                "туман",
+                "капля",
+                "шепіт",
+                "сонце",
+                "коліно",
+                "колорит",
+                "земля",
+                "пустота",
+                "правда",
+                "чорнило",
+                "лінійка",
+                "ряд",
+                "дим",
+                "умова",
+                "рицар",
+                "венера",
+                "життя",
+                "страх",
+                "теніс",
+                "море",
+                "спосіб",
+                "одяг",
+                "вихід",
+                "вхід",
+                "слово",
+                "голова",
+                "вовк",
+                "сенс",
+                "джерело",
+                "аптека"
             };
 
         }
@@ -154,7 +170,7 @@ namespace PsychoTest.Tests.Strup
                     QuestionsCount = wordsCount,
                     Part = currentPart,
                     Time = (finishTime - startTime).TotalSeconds
-                });                                    
+                });
             }
             else if (StartButton.Content.ToString() == "Наступна частина")
             {
@@ -242,11 +258,11 @@ namespace PsychoTest.Tests.Strup
             {
                 case 1:
                     return words.OrderBy(w => Guid.NewGuid()).Take(4).ToList();
-                case 2:                    
+                case 2:
                 case 3:
                     return colors.Keys.OrderBy(w => Guid.NewGuid()).Take(4).ToList();
             }
-            return null;   
+            return null;
         }
 
         private void CheckAnswer(string answer)

@@ -26,7 +26,7 @@
         </Grid>
         <Button x:Name="StartButton" Content="Старт" HorizontalAlignment="Left" Margin="80,0,0,40" VerticalAlignment="Bottom" Width="118" Height="33" Click="StartButton_Click"/>
         <Label x:Name="timerLabel" Content="00:00" Margin="568,325,80.4,40" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <Grid Name="resultGrid"  Margin="48,25,59.6,87" Background="White">
+        <Grid Name="resultGrid"  Margin="48,25,59.6,87" Background="White" Visibility="Hidden">
             <Label x:Name="label" Content="Всього слів: " HorizontalAlignment="Left" Margin="231,74,0,0" VerticalAlignment="Top" FontSize="21.333" RenderTransformOrigin="0.215,0.086"/>
             <Label x:Name="label2" Content="Кількість помилок: " HorizontalAlignment="Left" Margin="164,117,0,0" VerticalAlignment="Top" FontSize="21.333"/>
             <Label x:Name="label3" Content="Час: " HorizontalAlignment="Left" Margin="305,160,0,0" VerticalAlignment="Top" FontSize="21.333"/>

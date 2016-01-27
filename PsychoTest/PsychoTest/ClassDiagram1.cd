@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PsychoTest.Model.DB">
+    <Position X="18.25" Y="6.25" Width="1.5" />
+    <AssociationLine Name="StrupTestResults" Type="PsychoTest.Tests.Strup.StrupResult" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.25" Y="7.483" />
+        <Point X="19.24" Y="7.858" />
+        <Point X="19.24" Y="8.623" />
+        <Point X="19.562" Y="8.623" />
+        <Point X="19.562" Y="9" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="StrupPartResults" Type="PsychoTest.Tests.Strup.PartResult" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.562" Y="7.483" />
+        <Point X="19.562" Y="7.858" />
+        <Point X="21.875" Y="7.858" />
+        <Point X="21.875" Y="9" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="NumberSortTestResults" Type="PsychoTest.Tests.NumberSort.NumberSortResult" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.688" Y="7.483" />
+        <Point X="18.688" Y="8.625" />
+        <Point X="17.25" Y="8.625" />
+        <Point X="17.25" Y="9" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ConfusedLinesTestResults" Type="PsychoTest.Tests.ConfusedLines.ConfusedLinesTestResult" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.406" Y="7.483" />
+        <Point X="18.406" Y="7.858" />
+        <Point X="15.25" Y="7.858" />
+        <Point X="15.25" Y="9" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAAAgAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DB.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="StrupTestResults" />
+      <Property Name="StrupPartResults" />
+      <Property Name="NumberSortTestResults" />
+      <Property Name="ConfusedLinesTestResults" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PsychoTest.Tests.ConfusedLines.ConfusedLinesTestResult">
+    <Position X="14.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAEAAAAAAAAAAAQAAAAAAAABAAAAAAAAAQA=</HashCode>
+      <FileName>Tests\ConfusedLines\ConfusedLinesTestResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PsychoTest.Tests.NumberSort.NumberSortResult">
+    <Position X="16.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAABAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAQA=</HashCode>
+      <FileName>Tests\NumberSort\NumberSortResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PsychoTest.Tests.Strup.StrupResult">
+    <Position X="19.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAABAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\Strup\StrupResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PsychoTest.Tests.Strup.PartResult">
+    <Position X="21" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAIAEAAAAAAAAAAAAAAABAAAAAAAAACAAAAQA=</HashCode>
+      <FileName>Tests\Strup\StrupResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PsychoTest.Tests.ConfusedLines.ConfusedLinesMain">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAiAAAAAABFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\ConfusedLines\ConfusedLinesMain.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.ConfusedLines.Intro">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\ConfusedLines\Intro.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.ConfusedLines.Statistics">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAIAAAAgAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Tests\ConfusedLines\Statistics.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.NumberSort.Intro">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\NumberSort\Intro.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.NumberSort.NumberSortMain">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAgAAAAAADAIAUiIAAAAAgEAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Tests\NumberSort\NumberSortMain.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.NumberSort.Statistics">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAIAAAAgAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Tests\NumberSort\Statistics.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.Strup.Statistics">
+    <Position X="21.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAIAAAAgAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Tests\Strup\Statistics.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.Strup.StrupIntro">
+    <Position X="21.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\Strup\StrupIntro.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PsychoTest.Tests.Strup.StrupMain">
+    <Position X="23.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEgAQQAAAAABABAAiAAADAWgFAECAACCBAAAAAAA=</HashCode>
+      <FileName>Tests\Strup\StrupMain.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
